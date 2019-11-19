@@ -28,29 +28,34 @@ Stack& Stack::operator=(const Stack &other)
     return *this;
 }
 
-bool Stack::Empty() const
+bool Stack::empty() const
 {
     return tos == 0;
 }
 
-bool Stack::Full() const
+bool Stack::full() const
 {
     return tos == size -1;
 }
 
-void Stack::Push(Type a)
+void Stack::push(Type a)
 {
-    if(Full())
+    if(full())
     {
         throw std::overflow_error("Stack is full");
     }
     data[tos++] = a;
 }
 
-Type Stack::Pop()
-{   if(Empty())
+Type Stack::pop()
+{   if(empty())
     {
         throw std::out_of_range("Stack is empty");
     }
     return data[--tos];
+}
+
+Type Stack::top()
+{
+    return data[tos];
 }

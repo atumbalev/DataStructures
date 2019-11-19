@@ -12,11 +12,12 @@ public:
     Stack& operator=(const Stack& other);
     ~Stack();
 
-    bool Empty() const;
-    bool Full() const;
+    bool empty() const;
+    bool full() const;
 
-    void Push(Type a);
-    Type Pop();
+    void push(Type a);
+    Type pop();
+    Type top();
 private:
     Type *data;
     size_t tos;
