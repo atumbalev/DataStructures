@@ -1,4 +1,4 @@
-<title>HTML Reference</title>
+# Data Structes course
 
 <d1>
   <dt>Cool Stuff</dt>
