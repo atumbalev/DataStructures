@@ -1,8 +1,8 @@
-#3 different ways to use higher order functions
+# 3 different ways to use higher order functions
 
 For this example we are going to use a Predicate
 
-##1. Using a template
+## 1. Using a template
 
 ```cpp
 template<class Pred>
@@ -12,7 +12,7 @@ bool fun(int a, Pred pa)
 }
 ```
 
-##2. Using function pointers
+## 2. Using function pointers
 
 ```cpp
 bool fun1(int a,bool (*p) (int))
@@ -21,7 +21,7 @@ bool fun1(int a,bool (*p) (int))
 }
 ```
 
-##3. Using function pointers again, but prettier
+## 3. Using function pointers again, but prettier
 
 ```cpp
 using Predicate = bool (*)(int);
