@@ -5,7 +5,7 @@
   <dd>Cool tricks, neat code snippets and more.</dd>
 
   <dt>Exercices and Implementations:</dt>
-  <dd>Code from Seminar and Workshop exercices.\n
+  <dd>Code from Seminar and Workshop exercices.<br>
   Implementations of Data Structures.</dd>
 
   <dt>Homeworks:</dt>
