@@ -1,9 +1,0 @@
-*.o
-*.exe
-*.out
-*.zip
-
-/*/CMakeLists.txt
-/*/cmake-build-debug
-/*/.idea
-
