@@ -89,7 +89,7 @@ void makeOrder(FMICoin& fmiCoin)
     std::cout << "Input wallet ID: ";
     unsigned id;
     std::cin >> id;
-
+ 
     try
     {
         fmiCoin.makeOrder(t, id, coins);
