@@ -48,7 +48,14 @@ bool expressionValidator(const char* filename)
                 return false;
             }
 
-            st.pop();
+            try
+            {
+                st.pop();
+            }
+            catch (std::out_of_range& e)
+            {
+                return false;
+            }
         }
         file.close();
         return st.empty();
