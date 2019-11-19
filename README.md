@@ -1,6 +1,6 @@
 # Data Structes course
 
-<d1>
+<dl>
   <dt>Cool Stuff</dt>
   <dd>Cool tricks, neat code snippets, and more</dd>
 
@@ -9,4 +9,4 @@
 
   <dt>Homeworks</dt>
   <dd>Homework assignments</dd>
-</d1
+</dl>
