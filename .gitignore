@@ -2,5 +2,7 @@
 *.exe
 *.out
 *.zip
-/CMakeLists.txt
-/cmake-build-debug
+CMakeLists.txt
+/*/cmake-build-debug
+/*/.idea
+
