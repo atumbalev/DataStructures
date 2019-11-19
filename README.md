@@ -2,7 +2,7 @@
 
 <dl>
   <dt>Cool Stuff</dt>
-  <dd>Cool tricks, neat code snippets, and more</dd>
+  <dd>Cool tricks, neat code snippets and more</dd>
 
   <dt>Exercice</dt>
   <dd>Code from Seminar and Workshop exercices</dd>
