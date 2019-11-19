@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/FMICoinRefactor.dir/main.cpp.o CMakeFiles/FMICoinRefactor.dir/FMICoin/Containers/WalletsContainer.cpp.o CMakeFiles/FMICoinRefactor.dir/FMICoin/Containers/TransactionsContainer.cpp.o CMakeFiles/FMICoinRefactor.dir/FMICoin/Containers/OrdersContainer.cpp.o CMakeFiles/FMICoinRefactor.dir/FMICoin/FMICoin.cpp.o  -o FMICoinRefactor 
