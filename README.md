@@ -4,8 +4,9 @@
   <dt>Cool Stuff</dt>
   <dd>Cool tricks, neat code snippets and more</dd>
 
-  <dt>Exercice</dt>
+  <dt>Exercices and Implementations</dt>
   <dd>Code from Seminar and Workshop exercices</dd>
+  <dd>Implementations of Data Structures</dd>
 
   <dt>Homeworks</dt>
   <dd>Homework assignments</dd>
