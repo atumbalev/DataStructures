@@ -2,7 +2,7 @@
 
 #include <stdexcept>
 #include <fstream>
-#include "Stack.h"
+#include "Array Stack/Stack.h"
 
 bool bigger(char newBracket, char oldBracket)
 {
