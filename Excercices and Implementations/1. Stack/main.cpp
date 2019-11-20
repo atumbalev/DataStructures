@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "../ExpressionValidator.h"
+#include "ExpressionValidator.h"
 
 int main()
 {
