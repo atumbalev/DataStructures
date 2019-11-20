@@ -15,7 +15,7 @@ public:
 
     bool empty() const;
     void enqueue(T a);
-    T& dequeue();
+    T dequeue();
     size_t size() const;
 private:
     void copy(const Node*);

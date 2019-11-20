@@ -80,7 +80,7 @@ void Queue::enqueue(T a)
 
 }
 
-T &Queue::dequeue()
+T Queue::dequeue()
 {
     if(empty()) { throw std::out_of_range("Queue is empty"); }
 
