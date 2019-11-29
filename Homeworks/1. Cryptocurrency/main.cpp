@@ -217,6 +217,7 @@ void mainLoop()
                 attractInvestors(fmiCoin);
                 break;
             case CommandQuit:
+                save(fmiCoin);
                 return;
             case InvalidCommand:
                 std::cout << "Invalid command\n";
