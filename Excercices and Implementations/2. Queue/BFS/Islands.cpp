@@ -75,7 +75,6 @@ int numberOfIslands(unsigned n, std::ifstream &in)
             {
                 ++count;
                 q.push({i, j});
-                sink(map, q.front());
                 while (!q.empty())
                 {
                     Point pos = q.front();
