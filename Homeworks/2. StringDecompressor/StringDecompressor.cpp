@@ -193,10 +193,10 @@ void StringDecompressor::decompress()
                 delete[] st.pop().str;
             }
         }
-    }
-    if (stringMode)
-    {
-        throw std::invalid_argument("Invalid strings");
+        if (stringMode)
+        {
+            throw std::invalid_argument("Invalid strings");
+        }
     }
 
 }
