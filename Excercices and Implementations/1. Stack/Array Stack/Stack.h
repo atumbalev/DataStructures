@@ -1,26 +1,29 @@
 #pragma once
 
 #include <iostream>
-#include <exception>
-#include <stdexcept>
 
-typedef char Type;
-
-class Stack {
+template <typename T>
+class Stack
+{
 public:
-    explicit Stack(size_t _size = 100);
-    Stack& operator=(const Stack& other);
+    Stack();
+    Stack(const Stack&) = delete;
+    Stack& operator=(const Stack&) = delete;
     ~Stack();
+
+    void push(const T& val);
+    T& pop();
+    T& top() const;
 
     bool empty() const;
     bool full() const;
 
-    void push(Type a);
-    Type pop();
-    Type top();
 private:
-    Type *data;
-    size_t tos;
-    size_t size;
+    void resize();
+
+    T* m_data;
+    size_t m_size;
+    size_t m_capacity;
 };
 
+#include "Stack.inl"

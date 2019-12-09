@@ -1,0 +1,8 @@
+//
+// Created by atanas on 8.12.19 г..
+//
+
+#ifndef STRINGDECOMPRESSOR_STACK_INL
+#define STRINGDECOMPRESSOR_STACK_INL
+
+#endif //STRINGDECOMPRESSOR_STACK_INL
