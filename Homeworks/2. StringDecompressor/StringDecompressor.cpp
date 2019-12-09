@@ -8,6 +8,7 @@ StringDecompressor::StringDecompressor(const char *inFilename, const char *outFi
     if (!in || !out)
     {
         std::cerr << "Invalid filenames!" << std::endl;
+        exit(-1);
     }
 
     compressedString = parseCStringFromStream(in);
