@@ -31,7 +31,7 @@ void quickSort(int arr[], int low, int high)
 { 
 	if (low < high) 
 	{ 
-		/* pi is partitioning index, arr[p] is now 
+		/* pi is partitioning index, arr[pi - 1] is now 
 		at right place */
 		int pi = partition(arr, low, high); 
 
