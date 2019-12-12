@@ -1,6 +1,4 @@
-/* C++ implementation of QuickSort */
-#include <bits/stdc++.h> 
-using namespace std; 
+#include <iostream>
 
 /* This function takes last element as pivot, places 
 the pivot element at its correct position in sorted 
@@ -50,9 +48,9 @@ void printArray(int arr[], int size)
 	int i; 
 	for (i = 0; i < size; i++) 
 	{
-		cout << arr[i] << " "; 
+		std::cout << arr[i] << " "; 
 	}
-	cout << endl; 
+	std::cout << std::endl; 
 } 
 
 // Driver Code 
@@ -61,7 +59,7 @@ int main()
 	int arr[] = {10, 7, 8, 9, 1, 5}; 
 	int n = sizeof(arr) / sizeof(arr[0]); 
 	quickSort(arr, 0, n - 1); 
-	cout << "Sorted array: \n"; 
+	std::cout << "Sorted array: \n"; 
 	printArray(arr, n); 
 	return 0; 
 }
