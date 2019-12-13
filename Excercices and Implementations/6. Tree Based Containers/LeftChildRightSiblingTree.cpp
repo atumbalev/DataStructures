@@ -23,13 +23,13 @@ public:
 	}
 
 	Tree<T>& operator=(const Tree<T>& other)
-    {
+	{
 	    if (this != &other)
-        {
-	        del(root);
-	        copy(root, other.root);
-        }
-    }
+	    {
+		del(root);
+		copy(root, other.root);
+	    }
+	}
 
     ~Tree() { del(root); }
 
@@ -67,15 +67,15 @@ private:
 
 		std::cout << "Node: "<< node->data;
 
-        std::cout << " | Sibling " << (node->sibling ? node->sibling->data : 0);
+        	std::cout << " | Sibling " << (node->sibling ? node->sibling->data : 0);
 
-        std::cout <<  "| Child " << (node->child ? node->child->data : 0);
+		std::cout <<  "| Child " << (node->child ? node->child->data : 0);
 
-        std::cout <<"| level "<< level << std::endl;
+		std::cout <<"| level "<< level << std::endl;
 
-        print(node->sibling, level);
-        print(node->child, level +1);
-    }
+		print(node->sibling, level);
+		print(node->child, level +1);
+	}
 
 	void insert(Node<T>*& r, const T& key, T path[], size_t plen)
 	{
@@ -84,7 +84,7 @@ private:
 			if (plen) return;
 
 			r = new Node<T>(key);
-            return;
+            		return;
 		}
 
 		if (plen == 1)
@@ -92,18 +92,19 @@ private:
 			Node<T>* n = new Node<T>(key);
 			n->sibling = r->child;
 			r->child = n;
-            return;
+		  	return;
 		}
 
-        Node<T>* n = r;
-        while (n)
-        {
-            if (n->data == path[0])
-            {
-                return insert(n->child, key, path +1, plen -1);
-            }
-            n = n->sibling;
-        }
+        	Node<T>* n = r;
+		while (n)
+		{
+			if (n->data == path[0])
+			{
+                		return insert(n->child, key, path +1, plen -1);
+			}
+			
+			n = n->sibling;
+		}
 	}
 
 
@@ -129,7 +130,7 @@ private:
 	}
 
 	void copy(Node<T>*& rt, const Node<T>* cp)
-    {
+	{
 	    if (!cp) return;
 
 	    rt = new Node<T>(cp->data);
@@ -138,7 +139,7 @@ private:
 
 	    copy(rt->child, cp->child);
 	    copy(rt->sibling, cp->sibling);
-    }
+	}
 
     void del(Node<T>* r)
     {
