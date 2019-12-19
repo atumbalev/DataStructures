@@ -23,7 +23,7 @@ we get:
 ```
 
 ### How it works:
-####in the regular expression we search for this exact pattern:
+#### in the regular expression we search for this exact pattern:
 
 *all of this is in group $0
 - a opening square bracket literal ```\[```
