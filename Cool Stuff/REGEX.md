@@ -17,9 +17,9 @@ And if we replace it with:
 ```
 we get:
 ```r
-<A href="https://www.google.com/">Google</a>
-<A Href="https://www.fmi.uni-sofia.bg/">FMI</a>
-<A href="https://github.com/metalfen4eto">my GitHub</a>
+<a href="https://www.google.com/">Google</a>
+<a href="https://www.fmi.uni-sofia.bg/">FMI</a>
+<a href="https://github.com/metalfen4eto">my GitHub</a>
 ```
 
 ### How it works:
