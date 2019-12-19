@@ -25,7 +25,7 @@ we get:
 ### How it works:
 #### in the regular expression we search for this exact pattern:
 
-*all of this is captured in group $0
+*all of this is captured in group 0
 - a opening square bracket literal ```\[```
 
 - we capture this in group 1 ```(```
