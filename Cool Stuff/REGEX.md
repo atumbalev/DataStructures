@@ -25,22 +25,22 @@ we get:
 ### How it works:
 #### in the regular expression we search for this exact pattern:
 
-*all of this is in group $0
+*all of this is captured in group $0
 - a opening square bracket literal ```\[```
 
-- we group this in $1 ```(```
+- we capture this in group 1 ```(```
 	- 0 or more ```*``` wildcard characters ```.``` 
 	- non-greedily ```?``` (we want to stop at the first closing bracket)
-- we close group $1 ```)```
+- we close group 1 ```)```
 
 - a closing bracket ```]```
 
 - a opening bracket literal ```\(```
 
-- we group this in $2 ```(```
+- we capture this in group 2 ```(```
 	- the exact sequence of characters ```http```
 	- 0 or more ```*``` wildcard characters ```.``` 
 	- non-greedily ```?```
-- we close group $2
+- we close group 2
 
 - a closing bracket literal ```\)```
