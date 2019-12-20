@@ -1,6 +1,9 @@
 # Data Structes course
 
 <dl>
+  <dt>Bonus Tasks:</dt>
+  <dd>Bonus tasks that I did in my free time</dd>
+
   <dt>Cool Stuff:</dt>
   <dd>Cool tricks, neat code snippets and more.</dd>
 
