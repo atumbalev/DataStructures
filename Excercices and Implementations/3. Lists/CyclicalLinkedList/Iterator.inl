@@ -2,6 +2,7 @@
 
 template <typename T>
 class List<T>::Iterator {
+private:
     friend class List;
     Node *current = nullptr;
 

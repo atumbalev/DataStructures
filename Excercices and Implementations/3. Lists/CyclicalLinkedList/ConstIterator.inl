@@ -2,6 +2,7 @@
 
 template <typename T>
 class List<T>::ConstIterator {
+private:
     friend class List;
     const Node *current = nullptr;
 
@@ -36,16 +37,16 @@ public:
     }
 
     bool operator!=(const ConstIterator &other) const {
-        return !(*this == other);
+        return *this != other;
     }
 
     /// Allow cross-compare with non const Iterator to allow ConstIterator() != list.end()
-    bool operator==(const iterator &other) const {
+    bool operator==(const Iterator &other) const {
         return current == other.current;
     }
 
-    bool operator!=(const iterator &other) const {
-        return !(*this == other);
+    bool operator!=(const Iterator &other) const {
+        return *this != other;
     }
 
     ConstIterator &operator++(int) {
